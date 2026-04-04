@@ -1163,7 +1163,7 @@ footer p { font-size:0.72rem; color:rgba(250,248,245,0.3); font-weight:300; }
         <div style="font-size:2.2rem;margin-bottom:1rem">✅</div>
         <h4 style="font-family:'Gilda Display',serif;font-size:1.15rem;font-weight:400;margin-bottom:0.6rem;color:var(--ink)">Enquiry Received</h4>
         <p style="font-size:0.85rem;color:var(--ink-mid);line-height:1.75;max-width:320px;margin:0 auto">Thank you for reaching out. We've received your enquiry and a member of our team will be in touch with you shortly.</p>
-        <p style="font-size:0.78rem;color:var(--ink-light);margin-top:1rem">For urgent matters, call us directly on <a href="tel:+447435412396" style="color:var(--accent);font-weight:500">+44 7435 412396</a></p>
+        <p style="font-size:0.78rem;color:var(--ink-light);margin-top:1rem">For urgent matters, call us directly on <a href="tel:+447411799376" style="color:var(--accent);font-weight:500">+44 7411 799376</a></p>
       </div>
 
       <form id="enquiryForm">
@@ -1192,7 +1192,7 @@ footer p { font-size:0.72rem; color:rgba(250,248,245,0.3); font-weight:300; }
       </form>
 
       <p style="font-size:0.72rem;color:var(--ink-light);text-align:center;margin-top:1.2rem;line-height:1.6">
-        For emergency placements call us directly: <a href="tel:+447435412396" style="color:var(--accent);font-weight:500;white-space:nowrap">+44 7435 412396</a>
+        For emergency placements call us directly: <a href="tel:+447411799376" style="color:var(--accent);font-weight:500;white-space:nowrap">+44 7411 799376</a>
       </p>
     </div>
   </div>
@@ -1256,7 +1256,7 @@ footer p { font-size:0.72rem; color:rgba(250,248,245,0.3); font-weight:300; }
       const data = Object.fromEntries(new FormData(enquiryForm));
       data._subject = 'New HatfieldHome Enquiry';
       try {
-        const res = await fetch('https://formsubmit.co/ajax/ss.saad148@gmail.com', {
+        const res = await fetch('https://formsubmit.co/ajax/mailzahid2000@gmail.com', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify(data)
@@ -1267,12 +1267,12 @@ footer p { font-size:0.72rem; color:rgba(250,248,245,0.3); font-weight:300; }
         } else {
           btn.textContent = 'Send Enquiry →';
           btn.disabled = false;
-          alert('Something went wrong. Please try again or call us on +44 7435 412396.');
+          alert('Something went wrong. Please try again or call us on +44 7411 799376.');
         }
       } catch {
         btn.textContent = 'Send Enquiry →';
         btn.disabled = false;
-        alert('Something went wrong. Please try again or call us on +44 7435 412396.');
+        alert('Something went wrong. Please try again or call us on +44 7411 799376.');
       }
     });
   }
