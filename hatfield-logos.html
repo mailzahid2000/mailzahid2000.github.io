@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HatfieldHome — Logo Assets</title>
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Jost', sans-serif;
+  background: #f5f2ed;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  display: flex; flex-direction: column; align-items: center; gap: 4rem;
+}
+
+h1 {
+  font-family: 'Gilda Display', serif;
+  font-size: 1.1rem; font-weight: 400; letter-spacing: 0.08em;
+  color: #9a928c; text-transform: uppercase; text-align: center;
+}
+
+/* ── LOGO CARD ── */
+.logo-card {
+  background: white; border-radius: 20px;
+  padding: 3rem 3.5rem;
+  box-shadow: 0 8px 40px rgba(26,22,18,0.08);
+  display: flex; flex-direction: column; align-items: center; gap: 1.5rem;
+  width: 100%; max-width: 420px;
+}
+.logo-label {
+  font-size: 0.68rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase;
+  color: #9a928c;
+}
+.logo-name {
+  font-family: 'Gilda Display', serif;
+  font-size: 1.6rem; color: #1a1612; letter-spacing: 0.01em;
+  text-align: center; line-height: 1.2;
+}
+.logo-name span { color: #c8785a; font-style: italic; }
+.logo-sub-text {
+  font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: #9a928c; text-align: center;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  width: 100%; max-width: 420px;
+  height: 1px; background: #e8e2db;
+}
+
+/* ── VARIANTS GRID ── */
+.variants { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; width: 100%; max-width: 900px; }
+
+.variant-card {
+  display: flex; flex-direction: column; align-items: center; gap: 1rem;
+  padding: 2rem 2.5rem; border-radius: 16px;
+  min-width: 180px;
+}
+.variant-card.light { background: white; box-shadow: 0 4px 24px rgba(26,22,18,0.07); }
+.variant-card.dark  { background: #1a1612; }
+.variant-card.cream { background: #faf8f5; border: 1px solid #e8e2db; }
+
+.variant-label {
+  font-size: 0.62rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+}
+.variant-card.light .variant-label { color: #9a928c; }
+.variant-card.dark  .variant-label { color: rgba(255,255,255,0.35); }
+.variant-card.cream .variant-label { color: #9a928c; }
+
+/* ── FLOWER COMPONENT ── */
+.flower-wrap {
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+}
+.flower-outer { animation: spinSlow 40s linear infinite; transform-origin: center; display: block; }
+.flower-inner { animation: spinSlow 25s linear infinite reverse; transform-origin: center; display: block; }
+.flower-center-ring {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 5;
+}
+
+/* Inline wordmark next to flower */
+.inline-logo {
+  display: flex; align-items: center; gap: 0.8rem;
+}
+.inline-name {
+  font-family: 'Gilda Display', serif;
+  font-size: 1.4rem; letter-spacing: 0.01em;
+}
+.inline-sub {
+  font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: #9a928c; margin-top: 0.1rem;
+}
+
+@keyframes spinSlow { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+
+/* usage table */
+.usage-table { width: 100%; max-width: 700px; border-collapse: collapse; }
+.usage-table th {
+  font-size: 0.65rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+  color: #9a928c; padding: 0.6rem 1rem; text-align: left;
+  border-bottom: 1px solid #e8e2db;
+}
+.usage-table td {
+  font-size: 0.78rem; color: #4a4440; padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0ece8; line-height: 1.5;
+}
+.usage-table tr:last-child td { border-bottom: none; }
+.usage-table tbody tr:hover td { background: #faf8f5; }
+
+.hint {
+  font-size: 0.72rem; color: #b0a89e; text-align: center; max-width: 400px; line-height: 1.6;
+}
+</style>
+</head>
+<body>
+
+<h1>HatfieldHome — Logo Assets</h1>
+
+<!-- ── HERO / PRIMARY LOGO ── -->
+<div class="logo-card">
+  <span class="logo-label">Primary Logo — Full</span>
+
+  <div class="flower-wrap" style="width:200px;height:200px">
+    <svg class="flower-outer" width="200" height="200" viewBox="0 0 200 200">
+      <defs>
+        <radialGradient id="a1" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#f2a0b4" stop-opacity="0.95"/><stop offset="100%" stop-color="#f2a0b4" stop-opacity="0.1"/></radialGradient>
+        <radialGradient id="a2" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#f5c842" stop-opacity="0.95"/><stop offset="100%" stop-color="#f5c842" stop-opacity="0.1"/></radialGradient>
+        <radialGradient id="a3" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#82c87a" stop-opacity="0.95"/><stop offset="100%" stop-color="#82c87a" stop-opacity="0.1"/></radialGradient>
+        <radialGradient id="a4" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#82b8f0" stop-opacity="0.95"/><stop offset="100%" stop-color="#82b8f0" stop-opacity="0.1"/></radialGradient>
+        <radialGradient id="a5" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#c09ae0" stop-opacity="0.95"/><stop offset="100%" stop-color="#c09ae0" stop-opacity="0.1"/></radialGradient>
+        <radialGradient id="a6" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#f4a06a" stop-opacity="0.95"/><stop offset="100%" stop-color="#f4a06a" stop-opacity="0.1"/></radialGradient>
+      </defs>
+      <ellipse cx="100" cy="38" rx="22" ry="46" fill="url(#a1)" transform="rotate(0   100 100)"/>
+      <ellipse cx="100" cy="38" rx="22" ry="46" fill="url(#a2)" transform="rotate(60  100 100)"/>
+      <ellipse cx="100" cy="38" rx="22" ry="46" fill="url(#a3)" transform="rotate(120 100 100)"/>
+      <ellipse cx="100" cy="38" rx="22" ry="46" fill="url(#a4)" transform="rotate(180 100 100)"/>
+      <ellipse cx="100" cy="38" rx="22" ry="46" fill="url(#a5)" transform="rotate(240 100 100)"/>
+      <ellipse cx="100" cy="38" rx="22" ry="46" fill="url(#a6)" transform="rotate(300 100 100)"/>
+    </svg>
+    <svg class="flower-inner" style="position:absolute;width:60%;height:60%" viewBox="0 0 120 120">
+      <defs>
+        <radialGradient id="b1" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#82b8f0" stop-opacity="0.85"/><stop offset="100%" stop-color="#82b8f0" stop-opacity="0.05"/></radialGradient>
+        <radialGradient id="b2" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#f2a0b4" stop-opacity="0.85"/><stop offset="100%" stop-color="#f2a0b4" stop-opacity="0.05"/></radialGradient>
+        <radialGradient id="b3" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#f5c842" stop-opacity="0.85"/><stop offset="100%" stop-color="#f5c842" stop-opacity="0.05"/></radialGradient>
+        <radialGradient id="b4" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#c09ae0" stop-opacity="0.85"/><stop offset="100%" stop-color="#c09ae0" stop-opacity="0.05"/></radialGradient>
+        <radialGradient id="b5" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#82c87a" stop-opacity="0.85"/><stop offset="100%" stop-color="#82c87a" stop-opacity="0.05"/></radialGradient>
+        <radialGradient id="b6" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#f4a06a" stop-opacity="0.85"/><stop offset="100%" stop-color="#f4a06a" stop-opacity="0.05"/></radialGradient>
+      </defs>
+      <ellipse cx="60" cy="22" rx="14" ry="30" fill="url(#b1)" transform="rotate(30  60 60)"/>
+      <ellipse cx="60" cy="22" rx="14" ry="30" fill="url(#b2)" transform="rotate(90  60 60)"/>
+      <ellipse cx="60" cy="22" rx="14" ry="30" fill="url(#b3)" transform="rotate(150 60 60)"/>
+      <ellipse cx="60" cy="22" rx="14" ry="30" fill="url(#b4)" transform="rotate(210 60 60)"/>
+      <ellipse cx="60" cy="22" rx="14" ry="30" fill="url(#b5)" transform="rotate(270 60 60)"/>
+      <ellipse cx="60" cy="22" rx="14" ry="30" fill="url(#b6)" transform="rotate(330 60 60)"/>
+    </svg>
+    <div class="flower-center-ring" style="width:56px;height:56px;background:white;box-shadow:0 4px 20px rgba(26,22,18,0.10)">
+      <div style="text-align:center">
+        <span style="font-family:'Gilda Display',serif;font-size:0.55rem;display:block;color:#1a1612;letter-spacing:0.04em">Hatfield</span>
+        <span style="font-family:'Gilda Display',serif;font-size:0.55rem;display:block;color:#c8785a;font-style:italic;letter-spacing:0.02em">Home</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="logo-name">Hatfield<span>Home</span></div>
+  <div class="logo-sub-text">— Caring for Young People —</div>
+</div>
+
+<div class="divider"></div>
+
+<div style="text-align:center"><h1>Logo Variants</h1></div>
+
+<div class="variants">
+
+  <!-- Inline — Light -->
+  <div class="variant-card light">
+    <span class="variant-label">Inline — Light</span>
+    <div class="inline-logo">
+      <div class="flower-wrap" style="width:52px;height:52px">
+        <svg class="flower-outer" width="52" height="52" viewBox="0 0 52 52">
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#f2a0b4" opacity="0.9" transform="rotate(0   26 26)"/>
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#f5c842" opacity="0.9" transform="rotate(60  26 26)"/>
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#82c87a" opacity="0.9" transform="rotate(120 26 26)"/>
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#82b8f0" opacity="0.9" transform="rotate(180 26 26)"/>
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#c09ae0" opacity="0.9" transform="rotate(240 26 26)"/>
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#f4a06a" opacity="0.9" transform="rotate(300 26 26)"/>
+        </svg>
+        <svg class="flower-inner" style="position:absolute;width:58%;height:58%" viewBox="0 0 30 30">
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#82b8f0" opacity="0.7" transform="rotate(30  15 15)"/>
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#f2a0b4" opacity="0.7" transform="rotate(90  15 15)"/>
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#f5c842" opacity="0.7" transform="rotate(150 15 15)"/>
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#c09ae0" opacity="0.7" transform="rotate(210 15 15)"/>
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#82c87a" opacity="0.7" transform="rotate(270 15 15)"/>
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#f4a06a" opacity="0.7" transform="rotate(330 15 15)"/>
+        </svg>
+        <div class="flower-center-ring" style="width:16px;height:16px;background:white;box-shadow:0 2px 8px rgba(26,22,18,0.12)"></div>
+      </div>
+      <div>
+        <div class="inline-name"><span style="color:#1a1612">Hatfield</span><span style="color:#c8785a;font-style:italic">Home</span></div>
+        <div class="inline-sub">Caring for Young People</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inline — Dark -->
+  <div class="variant-card dark">
+    <span class="variant-label">Inline — Dark</span>
+    <div class="inline-logo">
+      <div class="flower-wrap" style="width:52px;height:52px">
+        <svg class="flower-outer" width="52" height="52" viewBox="0 0 52 52">
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#f2a0b4" opacity="0.9" transform="rotate(0   26 26)"/>
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#f5c842" opacity="0.9" transform="rotate(60  26 26)"/>
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#82c87a" opacity="0.9" transform="rotate(120 26 26)"/>
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#82b8f0" opacity="0.9" transform="rotate(180 26 26)"/>
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#c09ae0" opacity="0.9" transform="rotate(240 26 26)"/>
+          <ellipse cx="26" cy="9"  rx="6" ry="12" fill="#f4a06a" opacity="0.9" transform="rotate(300 26 26)"/>
+        </svg>
+        <svg class="flower-inner" style="position:absolute;width:58%;height:58%" viewBox="0 0 30 30">
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#82b8f0" opacity="0.7" transform="rotate(30  15 15)"/>
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#f2a0b4" opacity="0.7" transform="rotate(90  15 15)"/>
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#f5c842" opacity="0.7" transform="rotate(150 15 15)"/>
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#c09ae0" opacity="0.7" transform="rotate(210 15 15)"/>
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#82c87a" opacity="0.7" transform="rotate(270 15 15)"/>
+          <ellipse cx="15" cy="5"  rx="3.5" ry="8" fill="#f4a06a" opacity="0.7" transform="rotate(330 15 15)"/>
+        </svg>
+        <div class="flower-center-ring" style="width:16px;height:16px;background:#1a1612;box-shadow:0 2px 8px rgba(0,0,0,0.4)"></div>
+      </div>
+      <div>
+        <div class="inline-name" style="font-family:'Gilda Display',serif;font-size:1.4rem">
+          <span style="color:white">Hatfield</span><span style="color:#f4a06a;font-style:italic">Home</span>
+        </div>
+        <div style="font-size:0.55rem;letter-spacing:0.15em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-top:0.1rem">Caring for Young People</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Icon Only — Large -->
+  <div class="variant-card cream">
+    <span class="variant-label">Icon Only — Large</span>
+    <div class="flower-wrap" style="width:120px;height:120px">
+      <svg class="flower-outer" width="120" height="120" viewBox="0 0 120 120">
+        <ellipse cx="60" cy="22" rx="13" ry="27" fill="#f2a0b4" opacity="0.92" transform="rotate(0   60 60)"/>
+        <ellipse cx="60" cy="22" rx="13" ry="27" fill="#f5c842" opacity="0.92" transform="rotate(60  60 60)"/>
+        <ellipse cx="60" cy="22" rx="13" ry="27" fill="#82c87a" opacity="0.92" transform="rotate(120 60 60)"/>
+        <ellipse cx="60" cy="22" rx="13" ry="27" fill="#82b8f0" opacity="0.92" transform="rotate(180 60 60)"/>
+        <ellipse cx="60" cy="22" rx="13" ry="27" fill="#c09ae0" opacity="0.92" transform="rotate(240 60 60)"/>
+        <ellipse cx="60" cy="22" rx="13" ry="27" fill="#f4a06a" opacity="0.92" transform="rotate(300 60 60)"/>
+      </svg>
+      <svg class="flower-inner" style="position:absolute;width:58%;height:58%" viewBox="0 0 70 70">
+        <ellipse cx="35" cy="12" rx="8"  ry="17" fill="#82b8f0" opacity="0.75" transform="rotate(30  35 35)"/>
+        <ellipse cx="35" cy="12" rx="8"  ry="17" fill="#f2a0b4" opacity="0.75" transform="rotate(90  35 35)"/>
+        <ellipse cx="35" cy="12" rx="8"  ry="17" fill="#f5c842" opacity="0.75" transform="rotate(150 35 35)"/>
+        <ellipse cx="35" cy="12" rx="8"  ry="17" fill="#c09ae0" opacity="0.75" transform="rotate(210 35 35)"/>
+        <ellipse cx="35" cy="12" rx="8"  ry="17" fill="#82c87a" opacity="0.75" transform="rotate(270 35 35)"/>
+        <ellipse cx="35" cy="12" rx="8"  ry="17" fill="#f4a06a" opacity="0.75" transform="rotate(330 35 35)"/>
+      </svg>
+      <div class="flower-center-ring" style="width:34px;height:34px;background:white;box-shadow:0 3px 14px rgba(26,22,18,0.10)"></div>
+    </div>
+  </div>
+
+  <!-- Icon Only — Small -->
+  <div class="variant-card light">
+    <span class="variant-label">Icon Only — Small</span>
+    <div class="flower-wrap" style="width:64px;height:64px">
+      <svg class="flower-outer" width="64" height="64" viewBox="0 0 64 64">
+        <ellipse cx="32" cy="11" rx="7" ry="14" fill="#f2a0b4" opacity="0.92" transform="rotate(0   32 32)"/>
+        <ellipse cx="32" cy="11" rx="7" ry="14" fill="#f5c842" opacity="0.92" transform="rotate(60  32 32)"/>
+        <ellipse cx="32" cy="11" rx="7" ry="14" fill="#82c87a" opacity="0.92" transform="rotate(120 32 32)"/>
+        <ellipse cx="32" cy="11" rx="7" ry="14" fill="#82b8f0" opacity="0.92" transform="rotate(180 32 32)"/>
+        <ellipse cx="32" cy="11" rx="7" ry="14" fill="#c09ae0" opacity="0.92" transform="rotate(240 32 32)"/>
+        <ellipse cx="32" cy="11" rx="7" ry="14" fill="#f4a06a" opacity="0.92" transform="rotate(300 32 32)"/>
+      </svg>
+      <svg class="flower-inner" style="position:absolute;width:58%;height:58%" viewBox="0 0 38 38">
+        <ellipse cx="19" cy="6"  rx="4.5" ry="10" fill="#82b8f0" opacity="0.75" transform="rotate(30  19 19)"/>
+        <ellipse cx="19" cy="6"  rx="4.5" ry="10" fill="#f2a0b4" opacity="0.75" transform="rotate(90  19 19)"/>
+        <ellipse cx="19" cy="6"  rx="4.5" ry="10" fill="#f5c842" opacity="0.75" transform="rotate(150 19 19)"/>
+        <ellipse cx="19" cy="6"  rx="4.5" ry="10" fill="#c09ae0" opacity="0.75" transform="rotate(210 19 19)"/>
+        <ellipse cx="19" cy="6"  rx="4.5" ry="10" fill="#82c87a" opacity="0.75" transform="rotate(270 19 19)"/>
+        <ellipse cx="19" cy="6"  rx="4.5" ry="10" fill="#f4a06a" opacity="0.75" transform="rotate(330 19 19)"/>
+      </svg>
+      <div class="flower-center-ring" style="width:18px;height:18px;background:white;box-shadow:0 2px 8px rgba(26,22,18,0.10)"></div>
+    </div>
+  </div>
+
+  <!-- Wordmark — Light -->
+  <div class="variant-card cream" style="justify-content:center">
+    <span class="variant-label">Wordmark — Light</span>
+    <div style="text-align:center">
+      <div style="font-family:'Gilda Display',serif;font-size:1.9rem;color:#1a1612;letter-spacing:-0.01em">
+        Hatfield<span style="color:#c8785a;font-style:italic">Home</span>
+      </div>
+      <div style="font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:#9a928c;margin-top:0.4rem">
+        — Caring for Young People —
+      </div>
+    </div>
+  </div>
+
+  <!-- Wordmark — Dark -->
+  <div class="variant-card dark" style="justify-content:center">
+    <span class="variant-label">Wordmark — Dark</span>
+    <div style="text-align:center">
+      <div style="font-family:'Gilda Display',serif;font-size:1.9rem;color:white;letter-spacing:-0.01em">
+        Hatfield<span style="color:#f4a06a;font-style:italic">Home</span>
+      </div>
+      <div style="font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-top:0.4rem">
+        — Caring for Young People —
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="divider"></div>
+
+<div style="text-align:center"><h1>Usage Guide</h1></div>
+
+<table class="usage-table">
+  <thead>
+    <tr>
+      <th>Context</th>
+      <th>Variant to use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>🖥️ Desktop nav bar</td><td>Inline — Light (or text wordmark)</td></tr>
+    <tr><td>📱 Mobile nav bar</td><td>Icon Only — Small + wordmark text (animated)</td></tr>
+    <tr><td>🏠 Hero / About page</td><td>Primary Logo — Full</td></tr>
+    <tr><td>📲 App icon / Favicon</td><td>Icon Only — Small (export as 32×32 PNG or .ico)</td></tr>
+    <tr><td>📘 Social media profile picture</td><td>Icon Only — Large (circle crop)</td></tr>
+    <tr><td>📧 Email header/footer</td><td>Inline — Light</td></tr>
+    <tr><td>🖨️ Print / letterhead / invoices</td><td>Wordmark — Light (static, no animation)</td></tr>
+    <tr><td>🌙 Dark background / dark mode</td><td>Inline — Dark or Wordmark — Dark</td></tr>
+    <tr><td>📑 PDF / Word documents</td><td>Wordmark — Light (animation won't work in print)</td></tr>
+  </tbody>
+</table>
+
+<div class="divider"></div>
+
+<div style="text-align:center"><h1>Brand Colour Palette</h1></div>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;max-width:560px">
+  <div style="text-align:center"><div style="width:64px;height:64px;border-radius:50%;background:#f2a0b4;box-shadow:0 4px 16px rgba(242,160,180,0.4);margin:0 auto 0.5rem"></div><div style="font-size:0.62rem;color:#9a928c;letter-spacing:0.1em;text-transform:uppercase">Rose</div><div style="font-size:0.6rem;color:#b0a89e">#f2a0b4</div></div>
+  <div style="text-align:center"><div style="width:64px;height:64px;border-radius:50%;background:#f5c842;box-shadow:0 4px 16px rgba(245,200,66,0.4);margin:0 auto 0.5rem"></div><div style="font-size:0.62rem;color:#9a928c;letter-spacing:0.1em;text-transform:uppercase">Sun</div><div style="font-size:0.6rem;color:#b0a89e">#f5c842</div></div>
+  <div style="text-align:center"><div style="width:64px;height:64px;border-radius:50%;background:#82c87a;box-shadow:0 4px 16px rgba(130,200,122,0.4);margin:0 auto 0.5rem"></div><div style="font-size:0.62rem;color:#9a928c;letter-spacing:0.1em;text-transform:uppercase">Sage</div><div style="font-size:0.6rem;color:#b0a89e">#82c87a</div></div>
+  <div style="text-align:center"><div style="width:64px;height:64px;border-radius:50%;background:#82b8f0;box-shadow:0 4px 16px rgba(130,184,240,0.4);margin:0 auto 0.5rem"></div><div style="font-size:0.62rem;color:#9a928c;letter-spacing:0.1em;text-transform:uppercase">Sky</div><div style="font-size:0.6rem;color:#b0a89e">#82b8f0</div></div>
+  <div style="text-align:center"><div style="width:64px;height:64px;border-radius:50%;background:#c09ae0;box-shadow:0 4px 16px rgba(192,154,224,0.4);margin:0 auto 0.5rem"></div><div style="font-size:0.62rem;color:#9a928c;letter-spacing:0.1em;text-transform:uppercase">Lavender</div><div style="font-size:0.6rem;color:#b0a89e">#c09ae0</div></div>
+  <div style="text-align:center"><div style="width:64px;height:64px;border-radius:50%;background:#f4a06a;box-shadow:0 4px 16px rgba(244,160,106,0.4);margin:0 auto 0.5rem"></div><div style="font-size:0.62rem;color:#9a928c;letter-spacing:0.1em;text-transform:uppercase">Peach</div><div style="font-size:0.6rem;color:#b0a89e">#f4a06a</div></div>
+  <div style="text-align:center"><div style="width:64px;height:64px;border-radius:50%;background:#c8785a;box-shadow:0 4px 16px rgba(200,120,90,0.4);margin:0 auto 0.5rem"></div><div style="font-size:0.62rem;color:#9a928c;letter-spacing:0.1em;text-transform:uppercase">Accent</div><div style="font-size:0.6rem;color:#b0a89e">#c8785a</div></div>
+  <div style="text-align:center"><div style="width:64px;height:64px;border-radius:50%;background:#1a1612;margin:0 auto 0.5rem"></div><div style="font-size:0.62rem;color:#9a928c;letter-spacing:0.1em;text-transform:uppercase">Ink</div><div style="font-size:0.6rem;color:#b0a89e">#1a1612</div></div>
+</div>
+
+<p class="hint">Open in any browser to see the live spinning animation. For print/PDF use, export the flower as a static PNG — animation won't work in documents.</p>
+
+</body>
+</html>
