@@ -1157,28 +1157,33 @@ footer p { font-size:0.72rem; color:rgba(250,248,245,0.3); font-weight:300; }
     <div class="form-card reveal d1">
       <h3>Send an Enquiry</h3>
       <p class="fdesc">All enquiries are treated with strict confidentiality.</p>
-      <div class="fr">
-        <div class="fg"><label>Your Name</label><input type="text" placeholder="Full name"></div>
-        <div class="fg"><label>Organisation</label><input type="text" placeholder="LA / agency / family"></div>
-      </div>
-      <div class="fr">
-        <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com"></div>
-        <div class="fg"><label>Phone</label><input type="tel" placeholder="07..."></div>
-      </div>
-      <div class="fg">
-        <label>Type of Enquiry</label>
-        <select>
-          <option>Standard Referral</option>
-          <option>Emergency Placement</option>
-          <option>General Enquiry</option>
-          <option>Partnership / Framework</option>
-        </select>
-      </div>
-      <div class="fg">
-        <label>Message</label>
-        <textarea placeholder="Tell us about the young person's needs or your enquiry..."></textarea>
-      </div>
-      <button class="fsub">Send Enquiry →</button>
+      <form action="https://formsubmit.co/ss.saad148@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New HatfieldHome Enquiry">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://saad-shaikh14.github.io/Hatfield/?sent=1">
+        <div class="fr">
+          <div class="fg"><label>Your Name</label><input type="text" name="name" placeholder="Full name" required></div>
+          <div class="fg"><label>Organisation</label><input type="text" name="organisation" placeholder="LA / agency / family"></div>
+        </div>
+        <div class="fr">
+          <div class="fg"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required></div>
+          <div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="07..."></div>
+        </div>
+        <div class="fg">
+          <label>Type of Enquiry</label>
+          <select name="enquiry_type">
+            <option>Standard Referral</option>
+            <option>Emergency Placement</option>
+            <option>General Enquiry</option>
+            <option>Partnership / Framework</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>Message</label>
+          <textarea name="message" placeholder="Tell us about the young person's needs or your enquiry..."></textarea>
+        </div>
+        <button type="submit" class="fsub">Send Enquiry →</button>
+      </form>
     </div>
   </div>
 </section>
